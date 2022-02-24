@@ -1,0 +1,158 @@
+.post {
+    background-color: white;
+    height: 700px;
+    width: 500px;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+}
+.post-footer {
+        padding-left:10px;  
+}
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+}
+.icon-trio {
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+}
+.icons-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.icons-size {
+    border: 5px solid red;
+    height: 80px;
+    width: 80px;
+}
+.profile-pics {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://media.wsimag.com/attachments/188b462da42b5418f6eb11d4dbd6214fab6ef039/store/fill/1090/613/96d34153fe81196b88433da1f4e5fdd61b2dd3de54e339e1fdf8667ed6b8/Cerro-El-Avila-Venezuela.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-2 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://pbs.twimg.com/profile_images/1410575489681571840/AyfTF5db_400x400.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-3 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://i.pinimg.com/736x/7f/50/d7/7f50d7281a907fc2e1080651295abc7f.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-4 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/10/500/300);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-5 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/65/500/300);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-6 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/41/490/300);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-7 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/500/500/300);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-8 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/8/500/300);
+    background-position: center;
+    background-size: cover;
+}
+.profile-pics-9 {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 14px;
+    padding-right: 5px;
+    height: 38px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(https://picsum.photos/id/69/500/300);
+    background-position: center;
+    background-size: cover;
+}
+.my-bg-color {
+    background-color: lightgrey;
+}
+.icons-post {
+    margin: 5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: gray;
+}
+.nav-pills .nav-link{
+    color: gray;
+    background-color: white;
+}
+.style-ft {
+    font-family: 'Comic Neue', cursive;;
+}

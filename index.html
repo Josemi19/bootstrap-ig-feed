@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6ad31c9262.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap" rel="stylesheet">
+    <title>Booststrap Photofeed</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="row">
+        <div>
+            <nav class="navbar navbar-light bg-light justify-content-end align-items-start">
+                <div class="container-fluid ms-5 col-6">
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class="style-ft">Instagram</span> 
+                    </a>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Create a new post
+                </button>
+                <!-- Button trigger modal end -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-between">
+                                <div>
+                                    <button type="button" class="btn btn-outline-dark"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-outline-dark"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal end -->
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle me-5" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- NavPill -->
+    <div class="row pt-3">
+        <div class="col">
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true"><i class="fa-solid fa-grip"></i></button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                </li>
+            </ul>
+            <div class="tab-content my-bg-color" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-4"> <img width="500px" height="300px"
+                                src="https://www.ecopoliticavenezuela.org/wp-content/uploads/2020/05/arquitectura_y_empresa_humbolt_avila_revista_rutas.jpg"
+                                alt="Foto del avila y el hotel humbolt"></div>
+                        <div class="col-4"> <img width="500px" height="300px"
+                                src="https://i.pinimg.com/originals/21/11/61/21116158daaeb1459b4ec0758505e1ad.gif"
+                                alt="GIF de una persona programando"></div>
+                        <div class="col-4"> <img width="500px" height="300px"
+                                src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/10/spider-man-sin-camino-a-casa-scaled.jpeg?fit=2560%2C1440&ssl=1"
+                                alt="Tom y Zendaya en una escena de Spider-Man"></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/10/500/300" alt=""></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/65/500/300" alt=""></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/41/490/300" alt=""></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/500/500/300" alt=""></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/8/500/300" alt=""></div>
+                        <div class="col-4"> <img src="https://picsum.photos/id/69/500/300" alt=""></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row pt-3">
+                        <!-- POST -->
+                        <div class="col-12 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo mt-3">
+                                        <div class="profile-pics">
+                                        </div>
+                                        <div>
+                                            <p><b>El_Avila</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img width="500px" height="400px"
+                                        src="https://www.ecopoliticavenezuela.org/wp-content/uploads/2020/05/arquitectura_y_empresa_humbolt_avila_revista_rutas.jpg"
+                                        alt="Foto del avila y el hotel humbolt">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>450,000</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo mt-3">
+                                        <div class="profile-pics-2">
+                                        </div>
+                                        <div>
+                                            <p><b>4_Geeks</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img width="500px" height="400px"
+                                        src="https://i.pinimg.com/originals/21/11/61/21116158daaeb1459b4ec0758505e1ad.gif"
+                                        alt="GIF de una persona programando">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>50,000 </b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-3">
+                                        </div>
+                                        <div>
+                                            <p><b>Spider-man</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img width="500px" height="400px"
+                                        src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2021/10/spider-man-sin-camino-a-casa-scaled.jpeg?fit=2560%2C1440&ssl=1"
+                                        alt="Tom y Zendaya en una escena de Spider-Man">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>10,000,000 </b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-4">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/10/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>40,000</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-5">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/65/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>1,000</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-6">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/41/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>7,000</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-7">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/500/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>500</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo  mt-3">
+                                        <div class="profile-pics-8">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/8/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>800</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                        <!-- POST -->
+                        <div class="col-12 pt-3 d-flex justify-content-center">
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="header-logo mt-3">
+                                        <div class="profile-pics-9">
+                                        </div>
+                                        <div>
+                                            <p><b>PicSum</b> <br>Josemi19</p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-ellipsis-vertical fa-2x icons-post"></i>
+                                    </div>
+                                </div>
+                                <div class="post-body">
+                                    <img src="https://picsum.photos/id/69/500/400" alt="">
+                                </div>
+                                <div class="post-footer">
+                                    <div class="icons-footer">
+                                        <div class="icon-trio">
+                                            <i class="fa-solid fa-heart fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-comment fa-2x icons-post"></i>
+                                            <i class="fa-regular fa-paper-plane fa-2x icons-post"></i>
+                                        </div>
+                                        <div class="save-post">
+                                            <i class="fa-regular fa-bookmark fa-2x icons-post"></i>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <p>Liked by <b>100 others</b></p>
+                                    </div>
+                                    <div>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sint neque
+                                            dolores aspernatur! Voluptatibus est cum vel labore perspiciatis doloremque
+                                            nisi laudantium quisquam consectetur suscipit asperiores, necessitatibus
+                                            dicta esse impedit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- POST end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- NavPill end -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
